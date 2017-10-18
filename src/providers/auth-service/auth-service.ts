@@ -36,7 +36,7 @@ export class AuthServiceProvider {
   }
 
   public register(credentials) {
-    if (credentials.email == null || credentials.pw == null) {
+    if (credentials.fname == null || credentials.lname == null || credentials.email == null || credentials.pw == null) {
       return Observable.create(observer => {
         observer.next(true);
         observer.complete();

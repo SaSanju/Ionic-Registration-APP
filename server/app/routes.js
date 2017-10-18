@@ -33,6 +33,8 @@ module.exports = function (app) {
 
         // create a todo, information comes from AJAX request from Angular
         var newUser = new User({
+            fname: req.body.fname,
+            lname: req.body.lname,
             email: req.body.email,
             password: req.body.pw
         });

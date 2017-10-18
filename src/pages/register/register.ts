@@ -19,7 +19,7 @@ import { LoginPage } from "../login/login";
 export class RegisterPage {
 
   createSuccess = false;
-  registerCredentials = { email: '', pw: '' };
+  registerCredentials = { fname: '', lname: '', email: '', pw: '' };
   
  
   constructor(private nav: NavController, private auth: AuthServiceProvider, private alertCtrl: AlertController) { }

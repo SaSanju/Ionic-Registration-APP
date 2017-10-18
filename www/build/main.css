@@ -25516,6 +25516,14 @@ page-dashboard .home {
   background: #56CA96;
 }
 
+page-dashboard em.verified {
+  color: #168004;
+}
+
+page-dashboard em.not-verified {
+  color: #c30404;
+}
+
 page-login .login-content {
   background: #56CA96;
 }

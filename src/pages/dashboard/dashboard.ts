@@ -20,11 +20,14 @@ export class DashboardPage {
 
   username = '';
   email = '';
+  hide:Boolean;
+
   constructor(private nav: NavController, private auth: AuthServiceProvider) {
     let info = this.auth.getUserInfo();
     if(info) {
-      this.username = info.email;
+      this.username = info.fname + ' ' + info.lname;
       this.email = info.email;
+      this.hide = info.isVerified;
     }
   }
  

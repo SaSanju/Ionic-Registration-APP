@@ -12,6 +12,7 @@
 </ion-header>
  
 <ion-content class="home" padding>
-  <h3>Welcome inside, {{username}}!</h3>
-  Your Email is: {{email}}
+  <h4>Welcome inside, {{username}}!</h4>
+  <ion-list>Email is: {{email}}<em class="verified" *ngIf="hide">(Verified)</em>
+  <em class="not-verified" *ngIf="!hide">(Not Verified)</em></ion-list>
 </ion-content>
