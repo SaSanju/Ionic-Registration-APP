@@ -27,7 +27,8 @@ function veryficationMailSender(req, num) {
       console.log(error);
       response.end("error");
     } else {
-      console.log("Message sent: " + response.message);
+      console.log(response)
+      console.log("Message sent to: " + response.messageId);
       response.end("sent");
     }
   });
